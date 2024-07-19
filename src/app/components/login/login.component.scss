@@ -1,0 +1,81 @@
+body {
+    background-color: #fff;
+    font-family: 'Karla', sans-serif;
+  }
+  
+  .container {
+    max-width: 300px; /* Ajustement de la taille */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa; /* Background légèrement gris pour correspondre à l'autre style */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+  
+    input {
+      width: 100%;
+      padding: 15px 10px;
+      font-size: 14px;
+      font-weight: bold;
+      border: 0;
+      border-bottom: 1px solid #e7e7e7;
+      border-radius: 0;
+      transition: border-color 0.15s ease-in-out;
+      color: #333;
+    }
+  
+    input:focus {
+      border-color: #007bff;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  
+    .text-danger {
+      color: #dc3545;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+  }
+  
+  button {
+    width: 100%;
+    padding: 13px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0;
+    color: #fff;
+  }
+  
+  .btn-primary {
+    background-color: #878aeb;
+    border-color: #878aeb;
+  }
+  
+  .btn-primary:hover {
+    background-color: #878aeb;
+    border-color: #878aeb;
+  }
+  
+  .btn-primary:disabled,
+  .btn-primary.disabled {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  

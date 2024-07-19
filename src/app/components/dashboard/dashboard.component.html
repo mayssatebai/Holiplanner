@@ -1,0 +1,32 @@
+
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="header">
+      <h2>User Details</h2>
+      <button class="btn add-btn" [routerLink]="['/add']">Ajouter</button>
+      
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let customer of customers">
+          <td>{{ customer.name }}</td>
+          <td>{{ customer.email }}</td>
+          <td>
+            <button class="btn edit-btn" (click)="openEditForm(customer)">Modifier</button>
+            <button class="btn delete-btn" (click)="deleteCustomer(customer.id)">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <app-add-customer *ngIf="showAddForm" (close)="closeAddForm()"></app-add-customer>
+    <app-edit-customer *ngIf="showEditForm" [selectedCustomer]="selectedCustomer" (close)="closeEditForm()"></app-edit-customer>
+  </div>
+  
